@@ -95,7 +95,7 @@ cd ~/code/scripts
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git
 
 cd
-cat > ~/Brewfile << EOL
+cat > ~/code/scripts/Brewfile << EOL
 brew "rm-improved"
 brew "gh"
 brew "stow"
@@ -118,7 +118,6 @@ cask "maccy"
 cask "onyx"
 cask "prusaslicer"
 cask "qbittorrent"
-cask "quik"
 cask "rectangle"
 cask "shottr"
 cask "skim"
@@ -128,7 +127,7 @@ cask "vitalsource-bookshelf"
 cask "vpn-by-google-one"
 cask "vscodium"
 EOL
-brew bundle --file=~/Brewfile
+brew bundle --file=~/code/scripts/Brewfile
 defaults write com.apple.dock orientation right
 defaults write "com.apple.dock" "persistent-apps" -array
 killall Dock
@@ -141,3 +140,5 @@ rip .*
 git clone https://github.com/zxzimeng/.dotfiles.git
 cd .dotfiles
 stow .
+
+open -a "Arc" --args --make-default-browser
