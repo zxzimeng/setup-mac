@@ -140,4 +140,10 @@ git clone https://github.com/zxzimeng/.dotfiles.git
 cd .dotfiles
 stow .
 
+cd ~/code
+git clone https://github.com/zxzimeng/superslicerconfigs.git
+git clone https://github.com/zxzimeng/bigjava.git
+git clone https://github.com/zxzimeng/leetcodec-.git
+git clone https://github.com/VzBoT3D/VzBoT-Vz235.git
+
 open -a "Arc" --args --make-default-browser
